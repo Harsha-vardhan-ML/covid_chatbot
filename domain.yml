@@ -1,0 +1,62 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - state_name
+  - my_query
+  - my_name
+  - precaution
+  
+forms:
+   form_covid:
+    NAME:
+    - type: from_entity
+      entity: NAME
+    STATE:
+    - type: from_entity
+      entity: STATE
+    
+entities:
+  - NAME
+  - STATE
+  
+actions:
+  - action_covid #custom action
+  #- validate_form_covid
+  #- utter_balance
+  #- utter_goodbye
+  
+slots:
+  NAME:
+     type: text
+     influence_conversation: false
+    
+  STATE:
+     type: text
+     influence_conversation: false
+     
+responses:
+  utter_ask_NAME:
+  - text: "Please enter your name"
+    
+  utter_ask_STATE:
+  - text: "Please enter state for which you want to know covid cases"
+    
+  utter_greet:
+  - text: "Hey! this is covid19 reporter, How can i help you?"
+  
+  utter_precaution:
+  - text: "sanitise your hands, wear mask, keep social distance"
+
+  utter_goodbye:
+  - text: "Have a nice day, Bye!!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  
+  
+  
+  
+  
