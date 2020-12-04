@@ -1,0 +1,14 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: my_query
+      - action: form_covid
+      - active_loop: form_covid
+      - active_loop: null
+      - action: action_covid
+      - action: utter_goodbye

@@ -1,0 +1,85 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - bye
+    - thanks
+    - by
+    - ok
+    - good boy
+    - good bye
+- intent: precaution
+  examples: |
+    - covid precautions
+    - covid care
+    - tell me covid precautions
+    - do i need to take any precautions for covid
+    - what are the precautions that are to be taken for covid  
+
+- intent: state_name
+  examples: |
+    - my state is [KARNATAKA]{"entity": "STATE"}
+    - my state is [GUJARAT]{"entity": "STATE"}
+    - my state is [KERALA]{"entity": "STATE"}
+    - my state is [TELANGANA]{"entity": "STATE"}
+    - state is [KARNATAKA]{"entity": "STATE"}
+    - state is [ANDHRA PRADESH]{"entity": "STATE"}
+    - state is [GOA]{"entity": "STATE"}
+    - state is [PUNJAB]{"entity": "STATE"}
+    - [KARNATAKA]{"entity": "STATE"}
+    - [GUJARAT]{"entity": "STATE"}
+    - [KERALA]{"entity": "STATE"}
+    - [ANDHRA PRADESH]{"entity": "STATE"}
+    - [TELANGANA]{"entity": "STATE"}
+    - [TAMILANADU]{"entity": "STATE"}
+    - [WEST BENGAL]{"entity": "STATE"}
+    - [PUNJAB]{"entity": "STATE"}
+    - [RAJASTHAN]{"entity": "STATE"}
+    - [GOA]{"entity": "STATE"}
+    - [BIHAR]{"entity": "STATE"}
+    - [SIKKIM]{"entity": "STATE"}
+    - [CHATTISGARH]{"entity": "STATE"}
+    
+- intent: my_query
+  examples: |
+    - I want to know covid cases
+    - I need to know covid cases
+    - I need to know number of covid cases
+    - May i know details about covid cases
+    - what is number of covid cases in my state
+    - please tell me number of covid cases
+    - covid cases please
+    - covid cases number
+    - my state covid cases
+    - I want to know my state covid cases
+    
+- intent: my_name
+  examples: |
+    - [ganesh]{"entity": "NAME"} 
+    - [virat]{"entity": "NAME"} 
+    - [rohit]{"entity": "NAME"}
+    - [lokesh]{"entity": "NAME"}
+    - [kumar]{"entity": "NAME"}
+    - [sachin]{"entity": "NAME"}
+    - [rahim]{"entity": "NAME"}
+    - [mahesh]{"entity": "NAME"}
+    - [smith]{"entity": "NAME"}
+    - [finch]{"entity": "NAME"}
+    
+    

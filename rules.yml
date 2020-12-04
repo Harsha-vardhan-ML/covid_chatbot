@@ -1,0 +1,18 @@
+version: "2.0"
+
+rules:
+
+
+#we cant write more than 1 user message in a rule, rules are not meant to hardcore a state machine,
+#for that purpose, use stories
+
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: give covid precautions when he asks
+  steps:
+  - intent: precaution
+  - action: utter_precaution
